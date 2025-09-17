@@ -14,5 +14,4 @@ streamlit==1.49.1
 pandas==2.3.2
 matplotlib==3.10.0
 seaborn==0.13.2
-pickle==4.0
 scikit-learn==1.7.2

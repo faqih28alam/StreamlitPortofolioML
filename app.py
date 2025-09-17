@@ -106,7 +106,7 @@ if page == "Home":
     cols = st.columns(3)
     for idx, img_url in enumerate(images):
         with cols[idx % 3]:
-            st.image(img_url, width=True)
+            st.image(img_url, width=500)
 
 
 elif page == "ML Dashboard":
@@ -185,6 +185,7 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 
 
 

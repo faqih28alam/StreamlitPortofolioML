@@ -49,15 +49,12 @@ def heart():
         input_df = user_input_features()
     
     # Load the scaler only once, after input_df is defined
-    try:
-        with open("scaler.pkl", "rb") as f:
-            scaler = pickle.load(f)
-    except FileNotFoundError:
-        st.error("⚠️ scaler.pkl not found. Please upload it to the project folder.")
-        return
-
-    # with open("scaler.pkl", "rb") as f:
-    #     scaler = pickle.load(f)
+    # try:
+    #     with open("scaler.pkl", "rb") as f:
+    #         scaler = pickle.load(f)
+    # except FileNotFoundError:
+    #     st.error("⚠️ scaler.pkl not found. Please upload it to the project folder.")
+    #     return
     
     try:
         img = Image.open("heart-disease.jpg")
@@ -66,7 +63,8 @@ def heart():
         st.info("heart-disease.jpg not found, please add the image to your folder.")
     
     if st.sidebar.button('Predict!'):
-        input_scaled = scaler.transform(input_df)
+        # input_scaled = scaler.transform(input_df)
+        input_scaled = input_df
         st.write(input_df)
         with open("output_decision_tree.pkl", 'rb') as file:
             loaded_model = pickle.load(file)
@@ -189,6 +187,7 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 
 
 

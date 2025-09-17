@@ -50,11 +50,11 @@ def heart():
     
     # Load the scaler only once, after input_df is defined
     try:
-    with open("scaler.pkl", "rb") as f:
-        scaler = pickle.load(f)
-except FileNotFoundError:
-    st.error("⚠️ scaler.pkl not found. Please upload it to the project folder.")
-    return
+        with open("scaler.pkl", "rb") as f:
+            scaler = pickle.load(f)
+    except FileNotFoundError:
+        st.error("⚠️ scaler.pkl not found. Please upload it to the project folder.")
+        return
 
     # with open("scaler.pkl", "rb") as f:
     #     scaler = pickle.load(f)
@@ -189,6 +189,7 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 
 
 

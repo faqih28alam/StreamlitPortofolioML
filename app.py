@@ -17,7 +17,7 @@ def heart():
     
     For these project, I have used Decision Tree Classifier algorithm to predict whether a person has heart disease or not based on various health parameters.         
     """)
-    
+    st.write(pickle.__version__)
     st.sidebar.header('User Input Features:')
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     if uploaded_file is not None:
@@ -186,6 +186,7 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 
 
 

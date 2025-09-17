@@ -52,7 +52,7 @@ def heart():
         scaler = pickle.load(f)
     
     try:
-        img = Image.open("Streamlit/heart-disease.jpg")
+        img = Image.open("heart-disease.jpg")
         st.image(img, width=500)
     except:
         st.info("heart-disease.jpg not found, please add the image to your folder.")
@@ -181,3 +181,4 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+

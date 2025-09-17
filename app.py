@@ -4,7 +4,7 @@ import pandas as pd
 # from sklearn.datasets import load_iris, load_digits
 # from sklearn.cluster import KMeans
 # from sklearn.ensemble import RandomForestClassifier
-import joblib
+# import joblib
 from PIL import Image
 import pickle
 import time
@@ -116,30 +116,30 @@ elif page == "ML Dashboard":
         st.write(f"You selected: {model}")
         if model == "Random Forest":
             st.subheader("Random Forest Classifier")
-            dataset = st.selectbox("Select Dataset", ["Iris", "Digits"])
-            if dataset == "Iris":
-                data = load_iris()
-                X = data.data
-                # Load trained model
-                #clf = joblib.load("iris_rf_model.pkl")
-                st.write("Model loaded successfully!")
+            # dataset = st.selectbox("Select Dataset", ["Iris", "Digits"])
+            # if dataset == "Iris":
+            #     data = load_iris()
+            #     X = data.data
+            #     # Load trained model
+            #     #clf = joblib.load("iris_rf_model.pkl")
+            #     st.write("Model loaded successfully!")
 
-                st.markdown("### Manual Input for Prediction")
-                feature_values = []
-                for i, feature in enumerate(data.feature_names):
-                    val = st.slider(
-                        label=feature,
-                        min_value=float(X[:, i].min()),
-                        max_value=float(X[:, i].max()),
-                        value=float(X[:, i].mean()),
-                        step=0.1
-                    )
-                    feature_values.append(val)
-                if st.button("Predict"):
-                    input_array = np.array(feature_values).reshape(1, -1)
-                    prediction = clf.predict(input_array)[0]
-                    pred_class = data.target_names[prediction]
-                    st.success(f"Predicted Class: **{pred_class}**")
+            #     st.markdown("### Manual Input for Prediction")
+            #     feature_values = []
+            #     for i, feature in enumerate(data.feature_names):
+            #         val = st.slider(
+            #             label=feature,
+            #             min_value=float(X[:, i].min()),
+            #             max_value=float(X[:, i].max()),
+            #             value=float(X[:, i].mean()),
+            #             step=0.1
+            #         )
+            #         feature_values.append(val)
+            #     if st.button("Predict"):
+            #         input_array = np.array(feature_values).reshape(1, -1)
+            #         prediction = clf.predict(input_array)[0]
+            #         pred_class = data.target_names[prediction]
+            #         st.success(f"Predicted Class: **{pred_class}**")
         
         elif model == "Heart Disease":
             heart()
@@ -181,5 +181,6 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 
 

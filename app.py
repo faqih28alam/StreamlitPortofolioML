@@ -1,5 +1,5 @@
 import streamlit as st
-import numpy as np
+# import numpy as np
 import pandas as pd
 # from sklearn.datasets import load_iris, load_digits
 # from sklearn.cluster import KMeans
@@ -186,6 +186,7 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 
 
 

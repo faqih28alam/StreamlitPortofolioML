@@ -1,9 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from sklearn.datasets import load_iris, load_digits
-from sklearn.cluster import KMeans
-from sklearn.ensemble import RandomForestClassifier
+# from sklearn.datasets import load_iris, load_digits
+# from sklearn.cluster import KMeans
+# from sklearn.ensemble import RandomForestClassifier
 import joblib
 from PIL import Image
 import pickle
@@ -181,4 +181,5 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 

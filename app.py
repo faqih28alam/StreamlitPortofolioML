@@ -5,6 +5,7 @@ import pandas as pd
 # from sklearn.cluster import KMeans
 # from sklearn.ensemble import RandomForestClassifier
 # import joblib
+from sklearn.preprocessing import StandardScaler
 from PIL import Image
 import pickle
 import time
@@ -181,6 +182,7 @@ elif page == "Contact":
 )
 
 # ...existing model code...
+
 
 
 

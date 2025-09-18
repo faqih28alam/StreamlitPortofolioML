@@ -1,9 +1,7 @@
 
 # 🤖 Machine Learning Portfolio
 
-This is my interactive **Machine Learning portfolio** built with [Streamlit](https://streamlit.io).  
-It showcases different ML projects, including **Heart Disease Prediction** using a Decision Tree Classifier.  
-🚀 Machine Learning Portfolio using Streamlit — A collection of interactive ML projects showcasing
+This is my interactive **Machine Learning portfolio** built with [Streamlit](https://streamlit.io). It showcases different ML projects, including **Heart Disease Prediction** using a Decision Tree Classifier.  
 
 To run Streamlit we need:
 Procfile, requirements.txt, runtime.txt, setup.sh
